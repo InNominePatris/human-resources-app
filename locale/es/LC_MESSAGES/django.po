@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-24 00:46-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\employee\apps.py:8 .\employee\models.py:46
+msgid "Employee"
+msgstr "Empleado"
+
+#: .\employee\models.py:12
+msgid "Female"
+msgstr "Femenino"
+
+#: .\employee\models.py:13
+msgid "Male"
+msgstr "Masculino"
+
+#: .\employee\models.py:22
+msgid "Alone"
+msgstr "Soltero"
+
+#: .\employee\models.py:23
+msgid "Adjoined"
+msgstr "Juntado"
+
+#: .\employee\models.py:24
+msgid "Married"
+msgstr "Casado"
+
+#: .\employee\models.py:25
+msgid "Divorced"
+msgstr "Divorciado"
+
+#: .\employee\models.py:28
+msgid "First name"
+msgstr "Nombre"
+
+#: .\employee\models.py:29
+msgid "Last name"
+msgstr "Apellidos"
+
+#: .\employee\models.py:31
+msgid "Age"
+msgstr "Edad"
+
+#: .\employee\models.py:34
+msgid "Gender"
+msgstr "Género"
+
+#: .\employee\models.py:35
+msgid "Dni"
+msgstr "Dni"
+
+#: .\employee\models.py:36
+msgid "Birthday"
+msgstr "Fecha de nacimiento"
+
+#: .\employee\models.py:37
+msgid "Civil status"
+msgstr "Estado civil"
+
+#: .\employee\models.py:38
+msgid "Address"
+msgstr "Dirección"
+
+#: .\employee\models.py:39
+msgid "Phone"
+msgstr "Teléfono"
+
+#: .\employee\models.py:45
+msgid "Employees"
+msgstr "Empleados"
