@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from phonenumber_field.modelfields import PhoneNumberField
-from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class Employee(models.Model):
@@ -27,10 +26,6 @@ class Employee(models.Model):
 
     first_name = models.CharField(max_length=20, verbose_name=_('First name'), unique=True)
     last_name = models.CharField(max_length=20, verbose_name=_('Last name'), unique=True)
-    age = models.IntegerField(
-        verbose_name=_('Age'),
-        validators=[MinValueValidator(18), MaxValueValidator(60)]
-    )
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, verbose_name=_('Gender'))
     dni = models.CharField(max_length=10, verbose_name=_('Dni'), unique=True)
     birthday = models.DateField(verbose_name=_('Birthday'))
