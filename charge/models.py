@@ -11,7 +11,6 @@ class Charge(models.Model):
         return '{}'.format(self.description, self.employee)
 
     class Meta:
-        verbose_name_plural =_('Charges')
+        verbose_name_plural = _('Charges')
         verbose_name = _('Charge')
-
 
