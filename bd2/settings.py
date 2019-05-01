@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'employee.apps.EmployeeConfig',
     'charge.apps.ChargeConfig',
     'phonenumber_field',
+
+    #Third-party Apps
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
