@@ -25,8 +25,8 @@ class Employee(models.Model):
         (STATUS_DIVORCED, _('Divorced'))
     )
 
-    first_name = models.CharField(max_length=20, verbose_name=_('First name'), unique=True)
-    last_name = models.CharField(max_length=20, verbose_name=_('Last name'), unique=True)
+    first_name = models.CharField(max_length=20, verbose_name=_('First name'))
+    last_name = models.CharField(max_length=20, verbose_name=_('Last name'))
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, verbose_name=_('Gender'))
     dni = models.CharField(max_length=10, verbose_name=_('Dni'), unique=True)
     birthday = models.DateField(verbose_name=_('Birthday'))

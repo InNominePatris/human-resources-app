@@ -83,12 +83,8 @@ WSGI_APPLICATION = 'bd2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'base',
-        'USER': 'postgres',
-        'PASSWORD': 'cristian',
-        'HOST': 'localhost',
-        'PORT': '5432',
     }
 }
 
