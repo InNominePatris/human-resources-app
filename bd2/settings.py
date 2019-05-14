@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9sy#%=j-@zzh-uj-nlxa4k4_ac!@5ugk1wm3+5nm#bu7tk==r1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -83,8 +83,12 @@ WSGI_APPLICATION = 'bd2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'base',
+        'USER': 'postgres',
+        'PASSWORD': 'cristian',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
