@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'charge.apps.ChargeConfig',
     'history.apps.HistoryConfig',
     'phonenumber_field',
+    'corsheaders',
 
     #Third-party Apps
     'rest_framework',
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -173,3 +175,5 @@ JWT_AUTH = {
     'JWT_AUTH_HEADER_PREFIX': 'JWT',
     'JWT_AUTH_COOKIE': None,
 }
+
+CORS_ORIGIN_WHITELIST = '*'
