@@ -14,13 +14,11 @@ class Employee(models.Model):
     )
 
     STATUS_ALONE = 'a'
-    STATUS_ADJOINED = 'ad'
     STATUS_MARRIED = 'ma'
     STATUS_DIVORCED = 'd'
 
     STATUS_CHOICES = (
         (STATUS_ALONE, _('Alone')),
-        (STATUS_ADJOINED, _('Adjoined')),
         (STATUS_MARRIED, _('Married')),
         (STATUS_DIVORCED, _('Divorced'))
     )
