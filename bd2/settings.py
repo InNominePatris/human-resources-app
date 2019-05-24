@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'employee.apps.EmployeeConfig',
     'charge.apps.ChargeConfig',
-    'history.apps.HistoryConfig',
     'phonenumber_field',
     'corsheaders',
 
