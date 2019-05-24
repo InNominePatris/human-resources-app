@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Charge, History
+from .models import Charge
 
 
 admin.site.register(Charge)
-admin.site.register(History)
+

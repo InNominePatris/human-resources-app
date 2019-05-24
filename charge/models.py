@@ -14,17 +14,5 @@ class Charge(models.Model):
         verbose_name = _('Charge')
 
 
-class History(models.Model):
-    detail = models.CharField(max_length=20, verbose_name=_('Detail'))
-    initial_date = models.DateField(verbose_name=_('Initial date'))
-    final_date = models.DateField(verbose_name=_('Final date'))
-    employee = models.ForeignKey(Employee, on_delete=models.CASCADE, verbose_name=_('Employee'))
 
-    def __str__(self):
-        return '{} {} {} {}'.format(self.detail, self.initial_date, self.final_date, self.employee)
-    
-    class Meta:
-        verbose_name_plural = _('Histories')
-        verbose_name = _('History')
-    
 
