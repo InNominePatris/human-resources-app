@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-25 13:27-0600\n"
+"POT-Creation-Date: 2019-05-24 00:32-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\charge\apps.py:8 .\charge\models.py:15
+#: .\charge\apps.py:8 .\charge\models.py:14
 msgid "Charge"
 msgstr "Cargo"
 
@@ -26,7 +26,7 @@ msgstr "Cargo"
 msgid "Description"
 msgstr "Descripción"
 
-#: .\charge\models.py:14
+#: .\charge\models.py:13
 msgid "Charges"
 msgstr "Cargos"
 
@@ -34,11 +34,11 @@ msgstr "Cargos"
 msgid "Employee"
 msgstr "Empleado"
 
-#: .\employee\models.py:11
+#: .\employee\models.py:12
 msgid "Female"
 msgstr "Femenino"
 
-#: .\employee\models.py:12
+#: .\employee\models.py:13
 msgid "Male"
 msgstr "Masculino"
 
@@ -47,52 +47,45 @@ msgid "Alone"
 msgstr "Soltero"
 
 #: .\employee\models.py:22
-msgid "Adjoined"
-msgstr "Juntado"
-
-#: .\employee\models.py:23
 msgid "Married"
 msgstr "Casado"
 
-#: .\employee\models.py:24
+#: .\employee\models.py:23
 msgid "Divorced"
 msgstr "Divorciado"
 
-#: .\employee\models.py:27
+#: .\employee\models.py:26
 msgid "First name"
 msgstr "Nombre"
 
-#: .\employee\models.py:28
+#: .\employee\models.py:27
 msgid "Last name"
 msgstr "Apellidos"
 
-#: .\employee\models.py:29
+#: .\employee\models.py:28
 msgid "Gender"
 msgstr "Género"
 
-#: .\employee\models.py:30
+#: .\employee\models.py:29
 msgid "Dni"
 msgstr "Dni"
 
-#: .\employee\models.py:31
+#: .\employee\models.py:30
 msgid "Birthday"
 msgstr "Fecha de nacimiento"
 
-#: .\employee\models.py:32
+#: .\employee\models.py:31
 msgid "Civil status"
 msgstr "Estado civil"
 
-#: .\employee\models.py:33
+#: .\employee\models.py:32
 msgid "Address"
 msgstr "Dirección"
 
-#: .\employee\models.py:34
+#: .\employee\models.py:33
 msgid "Phone"
 msgstr "Teléfono"
 
 #: .\employee\models.py:40
 msgid "Employees"
 msgstr "Empleados"
-
-#~ msgid "Age"
-#~ msgstr "Edad"
