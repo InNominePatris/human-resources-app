@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-03 20:24-0600\n"
+"POT-Creation-Date: 2019-06-03 20:41-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,14 +78,14 @@ msgstr "Autorizado por"
 #: .\charge\models.py:67
 #, fuzzy
 #| msgid "Charges"
-msgid "Charges history"
-msgstr "Cargos"
+msgid "ChargesHistory"
+msgstr "Historial de cargos"
 
 #: .\charge\models.py:68
 #, fuzzy
 #| msgid "Charges"
-msgid "Charge history"
-msgstr "Cargos"
+msgid "ChargeHistory"
+msgstr "Historial de cargo"
 
 #: .\contract\models.py:11 .\employee\models.py:12 .\person\models.py:12
 msgid "Female"
