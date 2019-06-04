@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from phonenumber_field.modelfields import PhoneNumberField
-from django.contrib.auth.models import User
+from simple_history.models import HistoricalRecords
 
 
 class Employee(models.Model):
@@ -31,7 +31,7 @@ class Employee(models.Model):
     civil_status = models.CharField(max_length=2, choices=STATUS_CHOICES, verbose_name=_('Civil status'))
     address = models.CharField(max_length=50, verbose_name=_('Address'))
     phone = PhoneNumberField(verbose_name=_('Phone'))
-    user = models.OneToOneField(User, primary_key=True, on_delete=models.CASCADE)
+    history = HistoricalRecords()
 
     def __str__(self):
         return '{} {}'.format(self.first_name, self.last_name)
