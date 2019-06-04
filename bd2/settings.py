@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'suit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,11 +40,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'employee.apps.EmployeeConfig',
     'charge.apps.ChargeConfig',
+    'person.apps.PersonConfig',
+    'contract.apps.ContractConfig',
     'phonenumber_field',
     'corsheaders',
 
+
     #Third-party Apps
     'rest_framework',
+    'simple_history',
 ]
 
 MIDDLEWARE = [
@@ -151,10 +156,10 @@ REST_FRAMEWORK = {
 
 JWT_AUTH = {
     'JWT_PAYLOAD_HANDLER':
-        'employee.token.jwt_payload_handler',
+        'person.token.jwt_payload_handler',
 
     'JWT_RESPONSE_PAYLOAD_HANDLER':
-        'employee.token.jwt_response_payload_handler',
+        'person.token.jwt_response_payload_handler',
 
     'JWT_SECRET_KEY': SECRET_KEY,
     'JWT_GET_USER_SECRET_KEY': None,
