@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-24 00:32-0600\n"
+"POT-Creation-Date: 2019-06-03 20:24-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,29 +18,126 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\charge\apps.py:8 .\charge\models.py:14
+#: .\charge\apps.py:8 .\charge\models.py:39 .\charge\models.py:56
 msgid "Charge"
 msgstr "Cargo"
 
-#: .\charge\models.py:7
+#: .\charge\models.py:7 .\charge\models.py:27
+msgid "Name"
+msgstr "Nombre"
+
+#: .\charge\models.py:8 .\charge\models.py:28
 msgid "Description"
 msgstr "Descripción"
 
-#: .\charge\models.py:13
+#: .\charge\models.py:14
+msgid "Departments"
+msgstr "Departamentos"
+
+#: .\charge\models.py:15 .\charge\models.py:32
+msgid "Department"
+msgstr "Departamento"
+
+#: .\charge\models.py:23 .\charge\models.py:47
+msgid "Active"
+msgstr "Activo"
+
+#: .\charge\models.py:24 .\charge\models.py:48
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: .\charge\models.py:29 .\charge\models.py:61
+msgid "Status"
+msgstr "Estado"
+
+#: .\charge\models.py:38
 msgid "Charges"
 msgstr "Cargos"
 
-#: .\employee\apps.py:8 .\employee\models.py:41
+#: .\charge\models.py:53 .\contract\models.py:40 .\employee\apps.py:8
+#: .\employee\models.py:41
 msgid "Employee"
 msgstr "Empleado"
 
-#: .\employee\models.py:12
+#: .\charge\models.py:57 .\contract\models.py:38
+msgid "Initial date"
+msgstr "Fecha inicial"
+
+#: .\charge\models.py:58 .\contract\models.py:39
+msgid "Final date"
+msgstr "Fecha final"
+
+#: .\charge\models.py:59
+msgid "Motive of movement"
+msgstr "Motivo de movimiento"
+
+#: .\charge\models.py:60
+msgid "Authorized for"
+msgstr "Autorizado por"
+
+#: .\charge\models.py:67
+#, fuzzy
+#| msgid "Charges"
+msgid "Charges history"
+msgstr "Cargos"
+
+#: .\charge\models.py:68
+#, fuzzy
+#| msgid "Charges"
+msgid "Charge history"
+msgstr "Cargos"
+
+#: .\contract\models.py:11 .\employee\models.py:12 .\person\models.py:12
 msgid "Female"
 msgstr "Femenino"
 
-#: .\employee\models.py:13
+#: .\contract\models.py:12 .\employee\models.py:13 .\person\models.py:13
 msgid "Male"
 msgstr "Masculino"
+
+#: .\contract\models.py:15 .\employee\models.py:26 .\person\models.py:16
+msgid "First name"
+msgstr "Nombre"
+
+#: .\contract\models.py:16 .\employee\models.py:27 .\person\models.py:17
+msgid "Last name"
+msgstr "Apellidos"
+
+#: .\contract\models.py:17 .\employee\models.py:28 .\person\models.py:18
+msgid "Gender"
+msgstr "Género"
+
+#: .\contract\models.py:18 .\employee\models.py:29 .\person\models.py:19
+msgid "Dni"
+msgstr "Dni"
+
+#: .\contract\models.py:24
+msgid "Beneficiaries"
+msgstr "Beneficiarios"
+
+#: .\contract\models.py:25 .\contract\models.py:41
+msgid "Beneficiary"
+msgstr "Beneficiario"
+
+#: .\contract\models.py:33
+msgid "Defined"
+msgstr "Definido"
+
+#: .\contract\models.py:34
+msgid "Undefined"
+msgstr "Indefinido"
+
+#: .\contract\models.py:37
+msgid "Type"
+msgstr "Tipo"
+
+#: .\contract\models.py:47
+msgid "Contracts"
+msgstr "Contratos"
+
+#: .\contract\models.py:48
+msgid "Contract"
+msgstr "Contrato"
 
 #: .\employee\models.py:21
 msgid "Alone"
@@ -54,23 +151,7 @@ msgstr "Casado"
 msgid "Divorced"
 msgstr "Divorciado"
 
-#: .\employee\models.py:26
-msgid "First name"
-msgstr "Nombre"
-
-#: .\employee\models.py:27
-msgid "Last name"
-msgstr "Apellidos"
-
-#: .\employee\models.py:28
-msgid "Gender"
-msgstr "Género"
-
-#: .\employee\models.py:29
-msgid "Dni"
-msgstr "Dni"
-
-#: .\employee\models.py:30
+#: .\employee\models.py:30 .\person\models.py:20
 msgid "Birthday"
 msgstr "Fecha de nacimiento"
 
@@ -78,14 +159,22 @@ msgstr "Fecha de nacimiento"
 msgid "Civil status"
 msgstr "Estado civil"
 
-#: .\employee\models.py:32
+#: .\employee\models.py:32 .\person\models.py:21
 msgid "Address"
 msgstr "Dirección"
 
-#: .\employee\models.py:33
+#: .\employee\models.py:33 .\person\models.py:22
 msgid "Phone"
 msgstr "Teléfono"
 
 #: .\employee\models.py:40
 msgid "Employees"
 msgstr "Empleados"
+
+#: .\person\models.py:29
+msgid "Persons"
+msgstr "Personas"
+
+#: .\person\models.py:30
+msgid "Person"
+msgstr "persona"
