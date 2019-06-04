@@ -64,8 +64,8 @@ class ChargeHistory(models.Model):
         return '{}'.format(self.employee.first_name)
 
     class Meta:
-        verbose_name_plural = _('Charges history')
-        verbose_name = _('Charge history')
+        verbose_name_plural = _('ChargesHistory')
+        verbose_name = _('ChargeHistory')
 
 
 
