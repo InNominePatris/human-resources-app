@@ -31,6 +31,8 @@ class Employee(models.Model):
     civil_status = models.CharField(max_length=2, choices=STATUS_CHOICES, verbose_name=_('Civil status'))
     address = models.CharField(max_length=50, verbose_name=_('Address'))
     phone = PhoneNumberField(verbose_name=_('Phone'))
+    naturalized = models.BooleanField(default=False, verbose_name=_('Naturalized'))
+
     history = HistoricalRecords()
 
     def __str__(self):
