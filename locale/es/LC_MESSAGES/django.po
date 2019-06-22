@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-03 20:41-0600\n"
+"POT-Creation-Date: 2019-06-19 11:16-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,73 +18,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\charge\apps.py:8 .\charge\models.py:39 .\charge\models.py:56
+#: .\charge\apps.py:8 .\charge\models.py:41 .\charge\models.py:58
 msgid "Charge"
 msgstr "Cargo"
 
-#: .\charge\models.py:7 .\charge\models.py:27
+#: .\charge\models.py:8 .\charge\models.py:28
 msgid "Name"
 msgstr "Nombre"
 
-#: .\charge\models.py:8 .\charge\models.py:28
+#: .\charge\models.py:9 .\charge\models.py:29
 msgid "Description"
 msgstr "Descripción"
 
-#: .\charge\models.py:14
+#: .\charge\models.py:15
 msgid "Departments"
 msgstr "Departamentos"
 
-#: .\charge\models.py:15 .\charge\models.py:32
+#: .\charge\models.py:16 .\charge\models.py:34
 msgid "Department"
 msgstr "Departamento"
 
-#: .\charge\models.py:23 .\charge\models.py:47
+#: .\charge\models.py:24 .\charge\models.py:49 .\management\models.py:14
 msgid "Active"
 msgstr "Activo"
 
-#: .\charge\models.py:24 .\charge\models.py:48
+#: .\charge\models.py:25 .\charge\models.py:50 .\management\models.py:15
 msgid "Inactive"
 msgstr "Inactivo"
 
-#: .\charge\models.py:29 .\charge\models.py:61
+#: .\charge\models.py:30 .\charge\models.py:63
 msgid "Status"
 msgstr "Estado"
 
-#: .\charge\models.py:38
+#: .\charge\models.py:31
+msgid "Payment"
+msgstr "Pago"
+
+#: .\charge\models.py:40
 msgid "Charges"
 msgstr "Cargos"
 
-#: .\charge\models.py:53 .\contract\models.py:40 .\employee\apps.py:8
-#: .\employee\models.py:41
+#: .\charge\models.py:55 .\contract\models.py:40 .\controls\models.py:9
+#: .\employee\apps.py:8 .\employee\models.py:42
 msgid "Employee"
 msgstr "Empleado"
 
-#: .\charge\models.py:57 .\contract\models.py:38
+#: .\charge\models.py:59 .\contract\models.py:38
 msgid "Initial date"
 msgstr "Fecha inicial"
 
-#: .\charge\models.py:58 .\contract\models.py:39
+#: .\charge\models.py:60 .\contract\models.py:39
 msgid "Final date"
 msgstr "Fecha final"
 
-#: .\charge\models.py:59
+#: .\charge\models.py:61
 msgid "Motive of movement"
 msgstr "Motivo de movimiento"
 
-#: .\charge\models.py:60
+#: .\charge\models.py:62
 msgid "Authorized for"
 msgstr "Autorizado por"
 
-#: .\charge\models.py:67
-#, fuzzy
-#| msgid "Charges"
-msgid "ChargesHistory"
+#: .\charge\models.py:69
+msgid "Historial de cargos"
 msgstr "Historial de cargos"
 
-#: .\charge\models.py:68
-#, fuzzy
-#| msgid "Charges"
-msgid "ChargeHistory"
+#: .\charge\models.py:70
+msgid "Historial de cargo"
 msgstr "Historial de cargo"
 
 #: .\contract\models.py:11 .\employee\models.py:12 .\person\models.py:12
@@ -127,7 +127,7 @@ msgstr "Definido"
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: .\contract\models.py:37
+#: .\contract\models.py:37 .\management\models.py:48
 msgid "Type"
 msgstr "Tipo"
 
@@ -138,6 +138,32 @@ msgstr "Contratos"
 #: .\contract\models.py:48
 msgid "Contract"
 msgstr "Contrato"
+
+#: .\controls\apps.py:8
+#, fuzzy
+#| msgid "Contracts"
+msgid "Controls"
+msgstr "Contratos"
+
+#: .\controls\models.py:11
+msgid "From data"
+msgstr "Desde"
+
+#: .\controls\models.py:12
+msgid "To data"
+msgstr "Hasta"
+
+#: .\controls\models.py:13
+msgid "Reason"
+msgstr "Razón"
+
+#: .\controls\models.py:19
+msgid "Attendances request"
+msgstr "Solicitudes de salida"
+
+#: .\controls\models.py:20
+msgid "Attendance request"
+msgstr "Solicitud de salida"
 
 #: .\employee\models.py:21
 msgid "Alone"
@@ -167,9 +193,99 @@ msgstr "Dirección"
 msgid "Phone"
 msgstr "Teléfono"
 
-#: .\employee\models.py:40
+#: .\employee\models.py:34
+msgid "Naturalized"
+msgstr "Nacionalizado"
+
+#: .\employee\models.py:41
 msgid "Employees"
 msgstr "Empleados"
+
+#: .\management\apps.py:8
+msgid "Management"
+msgstr "Administración"
+
+#: .\management\models.py:13
+msgid "Pending"
+msgstr "Pendiente"
+
+#: .\management\models.py:16
+msgid "Completed"
+msgstr "Completado"
+
+#: .\management\models.py:27
+msgid "Gaming"
+msgstr "Gaming"
+
+#: .\management\models.py:28
+msgid "Online"
+msgstr "En línea"
+
+#: .\management\models.py:29
+msgid "Orientation"
+msgstr "Orientación"
+
+#: .\management\models.py:30
+msgid "Coaching"
+msgstr "Coaching"
+
+#: .\management\models.py:31
+msgid "Mvp"
+msgstr "Mvp"
+
+#: .\management\models.py:32
+msgid "Workshop"
+msgstr ""
+
+#: .\management\models.py:40
+msgid "Beginner"
+msgstr "Principiante"
+
+#: .\management\models.py:41
+msgid "Medium"
+msgstr "Medio"
+
+#: .\management\models.py:42
+msgid "Expert"
+msgstr "Experto"
+
+#: .\management\models.py:45
+msgid "Title"
+msgstr "Título"
+
+#: .\management\models.py:46
+#, fuzzy
+#| msgid "Civil status"
+msgid "Event status"
+msgstr "Estado civil"
+
+#: .\management\models.py:47
+msgid "Training program"
+msgstr "Programa de entrenamiento"
+
+#: .\management\models.py:49
+msgid "Level"
+msgstr "Nivel de dificultad"
+
+#: .\management\models.py:50
+msgid "Start time"
+msgstr "Fecha de inicio"
+
+#: .\management\models.py:51
+msgid "End time"
+msgstr "fecha de finalización"
+
+#: .\management\models.py:52
+msgid "Enterprise"
+msgstr "Empresa"
+
+#: .\management\models.py:58
+msgid "Trainings"
+msgstr "Entrenamientos"
+
+#: .\management\models.py:59
+msgid "Training"
+msgstr "Entrenamiento"
 
 #: .\person\models.py:29
 msgid "Persons"
