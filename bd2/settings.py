@@ -42,13 +42,14 @@ INSTALLED_APPS = [
     'charge.apps.ChargeConfig',
     'person.apps.PersonConfig',
     'contract.apps.ContractConfig',
-    'phonenumber_field',
+    'management.apps.ManagementConfig',
+    'controls.apps.ControlsConfig',
     'corsheaders',
-
 
     #Third-party Apps
     'rest_framework',
     'simple_history',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -181,3 +182,33 @@ JWT_AUTH = {
 }
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+# Ejemplo de configuración de Django Suit
+SUIT_CONFIG = {
+    # header
+    'ADMIN_NAME': 'Viesca 2000 Human Resources',
+    # 'HEADER_DATE_FORMAT': 'l, j. F Y ',
+    #' HEADER_TIME_FORMAT ':' H: i ',
+
+    # forms
+    # 'SHOW_REQUIRED_ASTERISK': Verdadero, # Default True
+    # 'CONFIRM_UNSAVED_CHANGES': Verdadero, # Default True
+
+    # menu
+    # 'SEARCH_URL': '/ admin / auth / user /',
+    # 'MENU_ICONS': {
+    # 'sites': 'icon-leaf',
+    # 'auth': 'icon-lock',
+    #},
+    # ' MENU_OPEN_FIRST_CHILD ': True, # Default True
+    #' MENU_EXCLUDE ': (' auth.group ',),
+    #' MENU ': (
+    #' sites ',
+    # {' app ':' auth ',' icon ':' icon ' lock ',' models ': (' user ',' group ')},
+    # {' label ':' Settings ',' icon ':' icon-cog ',' models ': (' auth.user ',' auth.group ')},
+    # {' label ':' Support ',' icon ':' icon-question-sign ',' url ':' / support / '},
+    #),
+
+    # misc
+    # 'LIST_PER_PAGE': 15
+}
