@@ -44,7 +44,6 @@ class Training(models.Model):
 
     title = models.CharField(max_length=30, verbose_name=_('Title'))
     event_status = models.CharField(max_length=10, choices=EVENT_STATUS_CHOICES, verbose_name=_('Event status'))
-    training_program = models.CharField(max_length=30, verbose_name=_('Training program'))
     type = models.CharField(max_length=20, choices=TRAINING_CHOICES, verbose_name=_('Type'))
     level = models.CharField(max_length=20, choices=EXPERTISE_CHOICES, verbose_name=_('Level'))
     start_time = models.DateField(verbose_name=_('Start time'))
@@ -59,5 +58,15 @@ class Training(models.Model):
         verbose_name = _('Training')
 
 
-class TrainingDetail(models.Model):
-    title = models.CharField(max_length=20)
+class TrainingProgram(models.Model):
+
+    name = models.CharField(max_length=20, verbose_name=_('Training Program Name'))
+    training = models.ForeignKey(
+        Training,
+        on_delete=models.CASCADE, verbose_name=_('Training')
+    )
+    employee = models.ManyToManyField(
+        Employee,
+        verbose_name=_('Employee')
+    )
+    status = models.CharField(max_length=10)
