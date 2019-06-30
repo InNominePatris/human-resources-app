@@ -4,17 +4,39 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class AttendanceRequest(models.Model):
+    MARRIAGE_PERMISSION = 'Marriage'
+    PARLOR_PERMISSION = 'Funeraral'
+    JUDGE_PERMISSION = 'Judge'
+    PERSONAL_ISSUES_PERMISSION = 'Personal'
+
+    PERMISSION_STATUS = (
+        (MARRIAGE_PERMISSION, _('Marriage')),
+        (PARLOR_PERMISSION, _('Parlor')),
+        (JUDGE_PERMISSION, _('Judge')),
+        (PERSONAL_ISSUES_PERMISSION, _('Personal'))
+    )
+
+    ATTENDANCE_ACTIVE = 'Active'
+    ATTENDANCE_INACTIVE = 'Inactive'
+
+    ATTENDANCE_STATUS = (
+        (ATTENDANCE_ACTIVE, _('Active')),
+        (ATTENDANCE_INACTIVE, _('Inactive'))
+    )
     employee = models.ForeignKey(
         Employee,
         on_delete=models.CASCADE, verbose_name=_('Employee')
     )
-    from_data = models.DateField(verbose_name=_('From data'))
-    to_data = models.DateField(verbose_name=_('To data'))
+
+    type = models.CharField(max_length=10, choices=PERMISSION_STATUS, verbose_name=_('Type'))
+    from_date = models.DateField(verbose_name=_('From date'))
+    to_date = models.DateField(verbose_name=_('To date'))
     reason = models.CharField(max_length=20, verbose_name=_('Reason'))
+    status = models.CharField(max_length=10, choices=ATTENDANCE_STATUS, verbose_name=_('Status'))
 
     def __str__(self):
         return '{}'.format(self.employee)
 
     class Meta:
         verbose_name_plural = _('Attendances request')
-        verbose_name = _('Attendance request')
+        verbose_name = _('Attendance request')\
