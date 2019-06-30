@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import datetime
+from django.core.files.storage import FileSystemStorage
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -44,12 +45,14 @@ INSTALLED_APPS = [
     'contract.apps.ContractConfig',
     'management.apps.ManagementConfig',
     'controls.apps.ControlsConfig',
+    'benefits.apps.BenefitsConfig',
     'corsheaders',
 
     #Third-party Apps
     'rest_framework',
     'simple_history',
     'phonenumber_field',
+    'dbbackup',
 ]
 
 MIDDLEWARE = [
@@ -186,7 +189,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 # Ejemplo de configuración de Django Suit
 SUIT_CONFIG = {
     # header
-    'ADMIN_NAME': 'Viesca 2000 Human Resources',
+    'ADMIN_NAME': 'Viesca 2000 Recursos Humanos',
     # 'HEADER_DATE_FORMAT': 'l, j. F Y ',
     #' HEADER_TIME_FORMAT ':' H: i ',
 
@@ -212,3 +215,6 @@ SUIT_CONFIG = {
     # misc
     # 'LIST_PER_PAGE': 15
 }
+
+DBBACKUP_STORAGE = 'dbbackup.storage.filesystem_storage'
+DBBACKUP_STORAGE_OPTIONS = {'location': '/var/backups'}
