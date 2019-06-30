@@ -5,6 +5,16 @@ from simple_history.models import HistoricalRecords
 
 
 class Employee(models.Model):
+    IDENTITY_DNI = 'DNI'
+    IDENTITY_PASSPORT = 'PASSPORT'
+    IDENTITY_RESIDENCE = 'RESIDENCE'
+
+    IDENTITY_CHOICES = (
+        (IDENTITY_DNI, _('DNI')),
+        (IDENTITY_PASSPORT, _('PASSPORT')),
+        (IDENTITY_RESIDENCE, _('RESIDENCE'))
+    )
+
     GENDER_FEMALE = 'f'
     GENDER_MALE = 'm'
 
@@ -25,12 +35,13 @@ class Employee(models.Model):
     first_name = models.CharField(max_length=20, verbose_name=_('First name'))
     last_name = models.CharField(max_length=20, verbose_name=_('Last name'))
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, verbose_name=_('Gender'))
-    dni = models.CharField(max_length=10, verbose_name=_('Dni'), unique=True)
+    identity = models.CharField(max_length=30, verbose_name=_('Identity'), unique=True)
+    type = models.CharField(max_length=10, choices=IDENTITY_CHOICES, verbose_name=_('Type'))
     birthday = models.DateField(verbose_name=_('Birthday'))
     civil_status = models.CharField(max_length=2, choices=STATUS_CHOICES, verbose_name=_('Civil status'))
     address = models.CharField(max_length=50, verbose_name=_('Address'))
     phone = PhoneNumberField(verbose_name=_('Phone'))
-    email = models.EmailField(max_length=70, blank=False, default=False, verbose_name=_('Email'))
+    email = models.EmailField(max_length=70, null=False, verbose_name=_('Email'))
     nationality = models.CharField(max_length=20, verbose_name=_('Nationality'), blank=True)
     history = HistoricalRecords()
 
@@ -91,10 +102,10 @@ class AcademicStudies(models.Model):
     )
     study_type = models.CharField(max_length=20, choices=EDUCATIONAL_LEVEL_CHOICES, verbose_name=_('Study type'))
     grade = models.CharField(max_length=6, choices=GRADE_CHOICES, verbose_name=_('Grade'))
-    description = models.CharField(max_length=200, default=False, blank=True, verbose_name=_('Description'))
+    description = models.CharField(max_length=200, verbose_name=_('Description'))
     from_date = models.DateField(null=False, verbose_name=_('From date'))
     to_date = models.DateField(null=True, verbose_name=_('To date'))
-    institute = models.CharField(max_length=30, default=False, verbose_name=_('Institute'))
+    institute = models.CharField(max_length=30, verbose_name=_('Institute'))
 
     def __str__(self):
         return '{}'.format(self.employee)
