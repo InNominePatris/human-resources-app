@@ -4,16 +4,12 @@ from employee.models import Employee
 
 
 class Training(models.Model):
-    EVENT_PENDING = 'Pending'
     EVENT_ACTIVE = 'Active'
     EVENT_INACTIVE = 'Inactive'
-    EVENT_COMPLETED = 'Completed'
 
     EVENT_STATUS_CHOICES = (
-        (EVENT_PENDING, _('Pending')),
         (EVENT_ACTIVE, _('Active')),
         (EVENT_INACTIVE, _('Inactive')),
-        (EVENT_COMPLETED, _('Completed'))
     )
 
     GAMING_TRAINING = 'Gaming'
@@ -59,8 +55,19 @@ class Training(models.Model):
 
 
 class TrainingProgram(models.Model):
+    PROGRAM_PENDING = 'Pending'
+    PROGRAM_ACTIVE = 'Active'
+    PROGRAM_INACTIVE = 'Inactive'
+    PROGRAM_COMPLETED = 'Completed'
 
-    name = models.CharField(max_length=20, verbose_name=_('Training Program Name'))
+    PROGRAM_STATUS_CHOICES = (
+        (PROGRAM_PENDING, _('Pending')),
+        (PROGRAM_ACTIVE, _('Active')),
+        (PROGRAM_INACTIVE, _('Inactive')),
+        (PROGRAM_COMPLETED, _('Completed'))
+    )
+
+    name = models.CharField(max_length=70, verbose_name=_('Nombre de programa de entrenamiento'))
     training = models.ForeignKey(
         Training,
         on_delete=models.CASCADE, verbose_name=_('Training')
@@ -69,4 +76,14 @@ class TrainingProgram(models.Model):
         Employee,
         verbose_name=_('Employee')
     )
-    status = models.CharField(max_length=10)
+    status = models.CharField(max_length=10, choices=PROGRAM_STATUS_CHOICES, verbose_name=_('Status'))
+    start_time = models.DateField(verbose_name=_('Start time'))
+    end_time = models.DateField(verbose_name=_('End time'))
+    enterprise = models.CharField(max_length=30, verbose_name=_('Enterprise'))
+
+    def __str__(self):
+        return '{}'.format(self.name)
+
+    class Meta:
+        verbose_name_plural = _('Programas de entrenamiento')
+        verbose_name = _('Programas de entrenamiento')
