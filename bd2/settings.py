@@ -216,5 +216,3 @@ SUIT_CONFIG = {
     # 'LIST_PER_PAGE': 15
 }
 
-DBBACKUP_STORAGE = 'dbbackup.storage.filesystem_storage'
-DBBACKUP_STORAGE_OPTIONS = {'location': '/var/backups'}
