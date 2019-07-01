@@ -68,6 +68,3 @@ class ChargeHistory(models.Model):
     class Meta:
         verbose_name_plural = _('Historial de cargos')
         verbose_name = _('Historial de cargo')
-
-
-
