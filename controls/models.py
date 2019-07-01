@@ -39,4 +39,4 @@ class AttendanceRequest(models.Model):
 
     class Meta:
         verbose_name_plural = _('Attendances request')
-        verbose_name = _('Attendance request')\
+        verbose_name = _('Attendance request')
