@@ -105,7 +105,11 @@ class AcademicStudies(models.Model):
     description = models.CharField(max_length=200, verbose_name=_('Description'))
     from_date = models.DateField(null=False, verbose_name=_('From date'))
     to_date = models.DateField(null=True, verbose_name=_('To date'))
-    institute = models.CharField(max_length=30, verbose_name=_('Institute'))
+    place = models.CharField(max_length=70, verbose_name=_('Place'))
 
     def __str__(self):
         return '{}'.format(self.employee)
+
+    class Meta:
+        verbose_name_plural = _('Academic studies')
+        verbose_name = _('Academic studie')
