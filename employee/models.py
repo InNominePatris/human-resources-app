@@ -103,8 +103,8 @@ class AcademicStudies(models.Model):
     study_type = models.CharField(max_length=20, choices=EDUCATIONAL_LEVEL_CHOICES, verbose_name=_('Study type'))
     grade = models.CharField(max_length=6, choices=GRADE_CHOICES, verbose_name=_('Grade'))
     description = models.CharField(max_length=200, verbose_name=_('Description'))
-    from_date = models.DateField(null=False, verbose_name=_('From date'))
-    to_date = models.DateField(null=True, verbose_name=_('To date'))
+    from_date = models.DateField(null=False, verbose_name=_('Desde'))
+    to_date = models.DateField(null=True, verbose_name=_('Hasta'))
     place = models.CharField(max_length=70, verbose_name=_('Place'))
 
     def __str__(self):

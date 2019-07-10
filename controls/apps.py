@@ -5,4 +5,4 @@ from django.utils.translation import ugettext_lazy as _
 class ControlsConfig(AppConfig):
     name = 'controls'
 
-    verbose_name = _('Controls')
+    verbose_name = _('Controles')

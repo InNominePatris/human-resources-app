@@ -28,7 +28,6 @@ class Charge(models.Model):
     name = models.CharField(max_length=20, verbose_name=_('Name'), unique=True)
     description = models.CharField(max_length=20, verbose_name=_('Description'))
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, verbose_name=_('Status'))
-    payment = models.IntegerField(verbose_name=_('Payment'), validators=[MinValueValidator(6000), MaxValueValidator(50000)], null=False)
     department = models.ForeignKey(
         Department,
         on_delete=models.CASCADE, verbose_name=_('Department'))

@@ -5,7 +5,7 @@ from .models import Employee, AcademicStudies
 class EmployeeAdmin(admin.ModelAdmin):
 
     list_display = ('first_name', 'last_name', 'email')
-    search_fields = ['first_name']
+    search_fields = ['first_name', 'identity']
 
 
 admin.site.register(Employee, EmployeeAdmin)

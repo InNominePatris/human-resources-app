@@ -4,7 +4,7 @@ from .models import Beneficiary, Contract
 
 class BenficiaryAdmin(admin.ModelAdmin):
     filter_horizontal = ('beneficiary',)
-
+    search_fields = ['employee', 'type']
     list_display = ('employee', 'type', 'initial_date', 'final_date')
 
 
