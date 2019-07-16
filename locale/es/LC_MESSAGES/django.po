@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 05:48-0600\n"
+"POT-Creation-Date: 2019-07-16 17:22-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,22 +21,25 @@ msgstr ""
 #: .\benefits\apps.py:8
 #, fuzzy
 #| msgid "Beneficiaries"
-msgid "Benefits"
-msgstr "Beneficios"
+msgid "Beneficios"
+msgstr "Beneficiarios"
 
-#: .\benefits\models.py:11 .\charge\models.py:24 .\charge\models.py:49
-#: .\controls\models.py:23 .\management\models.py:11 .\management\models.py:65
+#: .\benefits\models.py:11 .\benefits\models.py:33 .\benefits\models.py:70
+#: .\charge\models.py:24 .\charge\models.py:48 .\controls\models.py:23
+#: .\management\models.py:11 .\management\models.py:65
 msgid "Active"
 msgstr "Activo"
 
-#: .\benefits\models.py:12 .\charge\models.py:25 .\charge\models.py:50
-#: .\controls\models.py:24 .\management\models.py:12 .\management\models.py:66
+#: .\benefits\models.py:12 .\benefits\models.py:34 .\benefits\models.py:71
+#: .\charge\models.py:25 .\charge\models.py:49 .\controls\models.py:24
+#: .\management\models.py:12 .\management\models.py:66
 msgid "Inactive"
 msgstr "Inactivo"
 
-#: .\benefits\models.py:15 .\charge\models.py:55 .\contract\models.py:51
-#: .\controls\models.py:28 .\employee\apps.py:8 .\employee\models.py:53
-#: .\employee\models.py:101 .\management\models.py:77
+#: .\benefits\models.py:15 .\benefits\models.py:39 .\benefits\models.py:88
+#: .\charge\models.py:54 .\contract\models.py:51 .\controls\models.py:28
+#: .\employee\apps.py:8 .\employee\models.py:53 .\employee\models.py:101
+#: .\management\models.py:77
 msgid "Employee"
 msgstr "Empleado"
 
@@ -48,70 +51,130 @@ msgstr "Fecha"
 msgid "Detail"
 msgstr "Detalle"
 
-#: .\benefits\models.py:18 .\charge\models.py:30 .\charge\models.py:63
-#: .\controls\models.py:35 .\management\models.py:79
+#: .\benefits\models.py:18 .\benefits\models.py:43 .\benefits\models.py:91
+#: .\charge\models.py:30 .\charge\models.py:62 .\controls\models.py:35
+#: .\management\models.py:79
 msgid "Status"
 msgstr "Estado"
 
 #: .\benefits\models.py:24
-#, fuzzy
-#| msgid "Attendances request"
-msgid "Vacations request"
-msgstr "Solicitudes de vacaciones"
+msgid "Solicitudes de vacaciones"
+msgstr ""
 
 #: .\benefits\models.py:25
-msgid "Vacation request"
+msgid "Solicitud de vacaciones"
+msgstr "Solicitud de vacaciones"
+
+#: .\benefits\models.py:41 .\charge\models.py:58 .\contract\models.py:49
+msgid "Initial date"
+msgstr "Fecha inicial"
+
+#: .\benefits\models.py:42 .\charge\models.py:59 .\contract\models.py:50
+msgid "Final date"
+msgstr "Fecha final"
+
+#: .\benefits\models.py:44 .\benefits\models.py:94 .\charge\models.py:9
+#: .\charge\models.py:29 .\employee\models.py:105
+msgid "Description"
+msgstr "Descripción"
+
+#: .\benefits\models.py:50
+#, fuzzy
+#| msgid "Attendances request"
+msgid "Vacations plan"
+msgstr "Solicitudes de vacaciones"
+
+#: .\benefits\models.py:51
+#, fuzzy
+#| msgid "Vacation request"
+msgid "Vacation plan"
 msgstr "Solicitud de vacación"
 
-#: .\charge\apps.py:8 .\charge\models.py:41 .\charge\models.py:58
-msgid "Charge"
-msgstr "Cargo"
-
-#: .\charge\models.py:8 .\charge\models.py:28
+#: .\benefits\models.py:55 .\charge\models.py:8 .\charge\models.py:28
 msgid "Name"
 msgstr "Nombre"
 
-#: .\charge\models.py:9 .\charge\models.py:29 .\employee\models.py:105
-msgid "Description"
+#: .\benefits\models.py:56
+#, fuzzy
+#| msgid "Description"
+msgid "Descripción"
 msgstr "Descripción"
+
+#: .\benefits\models.py:61
+msgid "Heath insurances"
+msgstr "Seguros médicos"
+
+#: .\benefits\models.py:62
+msgid "Health insurance"
+msgstr "seguro médico"
+
+#: .\benefits\models.py:80
+msgid "Iniser"
+msgstr "INISER"
+
+#: .\benefits\models.py:81
+msgid "Assa"
+msgstr "ASSA"
+
+#: .\benefits\models.py:82
+msgid "America"
+msgstr "América"
+
+#: .\benefits\models.py:83
+msgid "Inss"
+msgstr "INSS"
+
+#: .\benefits\models.py:90
+msgid "Seguro médicco"
+msgstr "Seguro médico"
+
+#: .\benefits\models.py:92
+msgid "Provider"
+msgstr "Proveedor"
+
+#: .\benefits\models.py:93
+#, fuzzy
+#| msgid "To data"
+msgid "Offer date"
+msgstr "Desde"
+
+#: .\benefits\models.py:100
+msgid "Insurances application"
+msgstr "Aplicaciones de seguros"
+
+#: .\benefits\models.py:101
+msgid "Insurance application"
+msgstr "Aplicación de beneficios"
+
+#: .\charge\apps.py:8 .\charge\models.py:40 .\charge\models.py:57
+msgid "Charge"
+msgstr "Cargo"
 
 #: .\charge\models.py:15
 msgid "Departments"
 msgstr "Departamentos"
 
-#: .\charge\models.py:16 .\charge\models.py:34
+#: .\charge\models.py:16 .\charge\models.py:33
 msgid "Department"
 msgstr "Departamento"
 
-#: .\charge\models.py:31
-msgid "Payment"
-msgstr "Pago"
-
-#: .\charge\models.py:40
+#: .\charge\models.py:39
 msgid "Charges"
 msgstr "Cargos"
 
-#: .\charge\models.py:59 .\contract\models.py:49
-msgid "Initial date"
-msgstr "Fecha inicial"
-
-#: .\charge\models.py:60 .\contract\models.py:50
-msgid "Final date"
-msgstr "Fecha final"
-
-#: .\charge\models.py:61
+#: .\charge\models.py:60
 msgid "Motive of movement"
 msgstr "Motivo de movimiento"
 
-#: .\charge\models.py:62
+#: .\charge\models.py:61
 msgid "Authorized for"
 msgstr "Autorizado por"
 
-#: .\charge\models.py:69
+#: .\charge\models.py:68
 msgid "Historial de cargos"
 msgstr "Historial de cargos"
 
-#: .\charge\models.py:70
+#: .\charge\models.py:69
 msgid "Historial de cargo"
 msgstr "Historial de cargo"
 
@@ -183,7 +246,7 @@ msgstr "Contratos"
 #: .\controls\apps.py:8
 #, fuzzy
 #| msgid "Contracts"
-msgid "Controls"
+msgid "Controles"
 msgstr "Contratos"
 
 #: .\controls\models.py:13
@@ -206,13 +269,13 @@ msgstr "Judicial"
 msgid "Personal"
 msgstr "persona"
 
-#: .\controls\models.py:32 .\employee\models.py:106
+#: .\controls\models.py:32
 #, fuzzy
 #| msgid "To data"
 msgid "From date"
 msgstr "Desde"
 
-#: .\controls\models.py:33 .\employee\models.py:107
+#: .\controls\models.py:33
 #, fuzzy
 #| msgid "To data"
 msgid "To date"
@@ -346,6 +409,14 @@ msgstr "Tipo de estudio"
 msgid "Grade"
 msgstr "Grado"
 
+#: .\employee\models.py:106
+msgid "Desde"
+msgstr ""
+
+#: .\employee\models.py:107
+msgid "Hasta"
+msgstr ""
+
 #: .\employee\models.py:108
 msgid "Place"
 msgstr "Lugar"
@@ -459,3 +530,4 @@ msgstr "Personas"
 #: .\person\models.py:30
 msgid "Person"
 msgstr "persona"
+
