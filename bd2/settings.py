@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import datetime
-from django.core.files.storage import FileSystemStorage
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -32,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'suit',
+    'jet.dashboard',
+    'jet',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'simple_history',
     'phonenumber_field',
-    'dbbackup',
+
 ]
 
 MIDDLEWARE = [
@@ -186,33 +186,35 @@ JWT_AUTH = {
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-# Ejemplo de configuración de Django Suit
-SUIT_CONFIG = {
-    # header
-    'ADMIN_NAME': 'Viesca 2000 Recursos Humanos',
-    # 'HEADER_DATE_FORMAT': 'l, j. F Y ',
-    #' HEADER_TIME_FORMAT ':' H: i ',
-
-    # forms
-    # 'SHOW_REQUIRED_ASTERISK': Verdadero, # Default True
-    # 'CONFIRM_UNSAVED_CHANGES': Verdadero, # Default True
-
-    # menu
-    # 'SEARCH_URL': '/ admin / auth / user /',
-    # 'MENU_ICONS': {
-    # 'sites': 'icon-leaf',
-    # 'auth': 'icon-lock',
-    #},
-    # ' MENU_OPEN_FIRST_CHILD ': True, # Default True
-    #' MENU_EXCLUDE ': (' auth.group ',),
-    #' MENU ': (
-    #' sites ',
-    # {' app ':' auth ',' icon ':' icon ' lock ',' models ': (' user ',' group ')},
-    # {' label ':' Settings ',' icon ':' icon-cog ',' models ': (' auth.user ',' auth.group ')},
-    # {' label ':' Support ',' icon ':' icon-question-sign ',' url ':' / support / '},
-    #),
-
-    # misc
-    # 'LIST_PER_PAGE': 15
-}
-
+JET_THEMES = [
+    {
+        'theme': 'default', # theme folder name
+        'color': '#47bac1', # color of the theme's button in user menu
+        'title': 'Default' # theme title
+    },
+    {
+        'theme': 'green',
+        'color': '#44b78b',
+        'title': 'Green'
+    },
+    {
+        'theme': 'light-green',
+        'color': '#2faa60',
+        'title': 'Light Green'
+    },
+    {
+        'theme': 'light-violet',
+        'color': '#a464c4',
+        'title': 'Light Violet'
+    },
+    {
+        'theme': 'light-blue',
+        'color': '#5EADDE',
+        'title': 'Light Blue'
+    },
+    {
+        'theme': 'light-gray',
+        'color': '#222',
+        'title': 'Light Gray'
+    }
+]
