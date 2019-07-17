@@ -40,3 +40,24 @@ class AttendanceRequest(models.Model):
     class Meta:
         verbose_name_plural = _('Attendances request')
         verbose_name = _('Attendance request')
+
+
+class Assistance(models.Model):
+    present_status = 'present'
+    absent_status = 'Absent'
+    half_day_status = 'Half day'
+
+    ASSISTANCE_STATUS = (
+        (present_status, _('Present')),
+        (absent_status, _('Absent')),
+        (half_day_status, _('Half day')),
+    )
+
+    employee = models.ManyToManyField(Employee, verbose_name=_('Employees'))
+    date = models.DateTimeField(verbose_name=_('Date'))
+    mark = models.CharField(max_length=30, choices=ASSISTANCE_STATUS, verbose_name=_('Mark'))
+
+    def __str__(self):
+        return {''}.format(self.employee)
+
+

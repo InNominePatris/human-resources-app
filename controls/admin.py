@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import AttendanceRequest
+from .models import AttendanceRequest, Assistance
 
 
 class AttendanceAdmin(admin.ModelAdmin):
@@ -8,4 +8,5 @@ class AttendanceAdmin(admin.ModelAdmin):
     search_fields = ['employee', 'status']
 
 
-admin.site.register(AttendanceRequest, AttendanceAdmin)
+admin.site.register(AttendanceRequest, AttendanceAdmin),
+admin.site.register(Assistance)
