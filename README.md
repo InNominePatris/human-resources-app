@@ -46,7 +46,7 @@ Luego salimos del directorio *scripts* y del entorno virtual *prueba* ya que lo 
 
 ## Instalación
 
-Procedemos a descargar el proyecto desde el repositorio de GitHub: [Viesca 2000 Recursos Humanos](https://github.com/InNominePatris/Human-Resources)
+Procedemos a descargar el proyecto desde el repositorio de GitHub [Viesca 2000 Recursos Humanos](https://github.com/InNominePatris/Human-Resources) en la pestaña `clone or download` descargamos el proyecto como archivo `.zip` en `Download zip`
 
 
 
