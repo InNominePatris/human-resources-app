@@ -47,8 +47,8 @@ class VacationPlan(models.Model):
         return '{} {}'.format(self.employee, self.status)
 
     class Meta:
-        verbose_name_plural = _('Vacations plan')
-        verbose_name = _('Vacation plan')
+        verbose_name_plural = _('Planes de vacaciones')
+        verbose_name = _('Plan de vacaciones')
 
 
 class HealthInsurance(models.Model):
