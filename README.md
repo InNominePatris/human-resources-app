@@ -29,7 +29,11 @@ Procedemos a crear un entorno virtual para instalar luego nuestro proyecto en Dj
  
 Ya creado el entorno procedemos a navegar dentro del mismo, como veremos habrá una carpeta llamada *scripts*. Navegamos dentro de la carpeta scripts y escribimos el comando `activate`. 
 
-Se mirará de esta manera: `(prueba) C:\Users\lenovo\Desktop\prueba\Scripts>activate` y ejecutamos.
+Se mirará de esta manera:
+```
+C:\Users\lenovo\Desktop\prueba\Scripts>activate
+```
+y ejecutamos.
 
 Luego de haber ejecutado el comando notaremos que el nombre de nuestro entorno está encerrado dentro de paréntesis como lo muestra el ejemplo:
 
