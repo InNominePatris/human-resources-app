@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from phonenumber_field.modelfields import PhoneNumberField
-from simple_history.models import HistoricalRecords
 
 
 class Relative(models.Model):
@@ -91,7 +90,6 @@ class Employee(models.Model):
     phone = PhoneNumberField(verbose_name=_('Phone'))
     email = models.EmailField(max_length=70, null=False, verbose_name=_('Email'))
     nationality = models.CharField(max_length=20, verbose_name=_('Nationality'), blank=True)
-    history = HistoricalRecords()
 
     def __str__(self):
         return '{} {}'.format(self.first_name, self.last_name)
@@ -153,7 +151,6 @@ class AcademicStudies(models.Model):
     description = models.CharField(max_length=200, verbose_name=_('Description'))
     from_date = models.DateField(null=False, verbose_name=_('Desde'))
     to_date = models.DateField(null=True, verbose_name=_('Hasta'))
-    place = models.CharField(max_length=70, verbose_name=_('Place'))
 
     def __str__(self):
         return '{}'.format(self.employee)
