@@ -100,6 +100,18 @@ Ya creado nuestro superusuario procederemos como último paso a levantar el serv
 
 python manage.py runserver
 ```
+Luego de ejecutado nos mostrará un mensaje como este:
+
+```
+
+System check identified no issues (0 silenced).
+July 16, 2019 - 23:38:40
+Django version 2.0, using settings 'bd2.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+```
+**Dando click sobre la dirección `http://127.0.0.1:8000/` y luego de la `/` agregándole la plabra `admin` nuestro sitio comenzará a funcionar mostrándonos de entrada el Login del sistema en pantalla. La dirección final a ingresar en el navegador luego de estar corriendo el servidor sería `http://127.0.0.1:8000/admin`.
+
 **En el login ingresamos el nombre de usuario y contraseña anteriormente creados y  nuestro sistema _funcionará con nomalidad_ sin ningún problema**
 
 
