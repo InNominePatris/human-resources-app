@@ -2,9 +2,8 @@
 
 **Tabla de Contenidos**
 - Instalación de Python
-- Instalación y configuración de entorno virtual (Venv)
-- Instalación de proyecto
-- Configuración de proyecto
+- Instalación y configuración de entorno virtual (venv)
+- Instalación de proyecto y configuracion del proyecto
 
 # Instrucciones de instalación
 
@@ -18,3 +17,11 @@ Ya instalado Python procederemos a abrir nuestra terminal de comandos *cmd* medi
 ```
 Tecla Windows + R
 ```
+Luego escribimos `cmd` y ejecutamos.
+
+## Instalación y configuración de entorno virtual (venv)
+
+Procedemos a crear un entorno virtual para instalar luego nuestro proyecto en Django. Ya dentro de nuestra consola de comandos `cmd` escribimos el comando:
+
+ `python -m venv <nombre del entorno>`
+
