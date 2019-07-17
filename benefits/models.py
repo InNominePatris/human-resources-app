@@ -54,6 +54,7 @@ class VacationPlan(models.Model):
 class HealthInsurance(models.Model):
     name = models.CharField(max_length=70, verbose_name=_('Name'))
     description = models.CharField(max_length=300, verbose_name=_('Descripción'))
+
     def __str__(self):
         return '{}'.format(self.name)
 
@@ -90,7 +91,6 @@ class HealthInsuranceApplication(models.Model):
     health_insurance = models.ForeignKey(HealthInsurance, on_delete=models.CASCADE, verbose_name=_('Seguro médicco'))
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, verbose_name=_('Status'))
     provider = models.CharField(max_length=14, choices=INSURANCE_CHOICES, verbose_name=_('Provider'))
-    offer_date = models.DateField(verbose_name=_('Offer date'))
     description = models.CharField(max_length=300, verbose_name=_('Description'))
 
     def __str__(self):
