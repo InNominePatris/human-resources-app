@@ -17,4 +17,4 @@ Ve y descarga Python 3.7.0 [Python 3.7.0](https://www.python.org/downloads/relea
 #### Manipulación de contenido|
 [TOC]
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![
+![](https://img.shields.io/github/Python 3.7.0/pandao/editor.md.svg) ![
