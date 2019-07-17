@@ -65,7 +65,7 @@ Procedemos a descargar el proyecto desde el repositorio de GitHub [Viesca 2000 R
 
 ## Configuración del proyecto
 
-Ya con Python instalado, la base de datos en PostgreSQL `base` y nuestro entorno virtual activado ademas ya dentro de la carpeta del proyecto que descargamos llamada `Human-Resources` procedemos a trabajar sobre las configuraciones del proyecto.
+Ya con Python instalado, la base de datos en PostgreSQL `base` y nuestro entorno virtual activado ademas ya dentro de la carpeta del proyecto que descargamos llamada `Human-Resources` procedemos a trabajar sobre las configuraciones propias de Django para poner en funcionamiento el proyecto.
 
 Siguiendo dentro de nuestro directorio procedemos a instalar Django y todas las librerías correspondientes contenidas en el archivo `.txt` de nombre *requirements* mediante el comando:
 
