@@ -8,5 +8,10 @@ class AttendanceAdmin(admin.ModelAdmin):
     search_fields = ['employee', 'status']
 
 
+class AssistanceAdmin(admin.ModelAdmin):
+    search_fields = ['employee']
+    list_display = ('mark', 'date')
+
+
 admin.site.register(AttendanceRequest, AttendanceAdmin),
-admin.site.register(Assistance)
+admin.site.register(Assistance, AssistanceAdmin)

@@ -58,6 +58,6 @@ class Assistance(models.Model):
     mark = models.CharField(max_length=30, choices=ASSISTANCE_STATUS, verbose_name=_('Mark'))
 
     def __str__(self):
-        return {''}.format(self.employee)
+        return '{}'.format(self.employee)
 
 
