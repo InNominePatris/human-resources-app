@@ -18,4 +18,4 @@ Ve y descarga Python 3.7.0 https://img.shields.io/badge/Python%20-3.7.0-red.svg
 #### Manipulación de contenido|
 [TOC]
 
-![](https://img.shields.io/github/Python 3.7.0/pandao/editor.md.svg) ![
+![](https://img.shields.io/github/Python 3.7.0/pandao/editor.md.svg) ![]
