@@ -26,7 +26,7 @@ Suponiendo que ya tiene instalado PosrgreSQL nos dirigimos a PgAdmin y creamos u
 
 Instalación de PostgreSQL:
 
-> La instalación de PostgreSQL no está cubierta en esta documentación. Le recomendamos tener PostgreSQL 11.1 instalado en su ordenador ya que la base de datos de este proyecto se rige bajo la versión 11.1 del mismo.
+> La instalación de PostgreSQL no está cubierta en esta documentación. Le recomendamos tener PostgreSQL >= 11.1 instalado en su ordenador ya que la base de datos de este proyecto se rige bajo una versión >=11.1 del mismo.
 
 ## Instalación y configuración de entorno virtual (venv)
 
@@ -61,7 +61,33 @@ Procedemos a descargar el proyecto desde el repositorio de GitHub [Viesca 2000 R
 
 ## Configuración del proyecto
 
-Ya con nuestro entorno virtual activado y dentro de la carpeta del proyecto que descargamos llamada `Human-Resources` procedemos a trabajar sobre las configuraciones del proyecto
+Ya con Python instalado, la base de datos en PostgreSQL `base` y nuestro entorno virtual activado ademas ya dentro de la carpeta del proyecto que descargamos llamada `Human-Resources` procedemos a trabajar sobre las configuraciones del proyecto.
+
+Siguiendo dentro de nuestro directorio procedemos a instalar Django y todas las librerías correspondientes contenidas en el archivo `.txt` de nombre *requirements* mediante el comando:
+
+```
+
+pip install -r requirements.txt
+```
+
+Y automáticamente nuestras librerías incluyendo Django se instalarán dentro de nuestro proyecto.
+
+Siguiendo en la misma ruta `(prueba) C:\Users\lenovo\Desktop\Human-Resources> ` procederemos a ejecutar las migraciones de nuestro proyecto mediante dos comandos en orden:
+
+```
+
+python manage.py makemigrations
+python manage.py migrate
+```
+Veremos como nuestras migraciones se comienzan a realizar sobre la base de datos `base` en PostgreSQL.
+
+Luego crearemos al primer usuario mediante el comando: 
+
+```
+Python manage.py createsuperuser
+```
+
+
 
 
 
