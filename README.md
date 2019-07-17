@@ -10,5 +10,7 @@ Ve y descarga Python 3.7.0 https://img.shields.io/badge/Python%20-3.7.0-red.svg
 [Python 3.7.0](https://www.python.org/downloads/release/python-370/) 
 
 **Table of Contents**
-
-[Python 3.7.0](https://img.shields.io/bitbucket/pipelines/InNominePatris/Human-Resources.svg?color=green&label=Python)
+- Instalación de Python
+- Instalación y configuración de entorno virtual (Venv)
+- Instalación de proyecto
+- Configuración de proyecto
