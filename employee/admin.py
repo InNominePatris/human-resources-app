@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Employee, AcademicStudies
+from .models import Employee, AcademicStudies, Relative
 
 
 class EmployeeAdmin(admin.ModelAdmin):
@@ -10,5 +10,6 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 admin.site.register(Employee, EmployeeAdmin)
 admin.site.register(AcademicStudies)
+admin.site.register(Relative)
 
 

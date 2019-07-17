@@ -4,6 +4,54 @@ from phonenumber_field.modelfields import PhoneNumberField
 from simple_history.models import HistoricalRecords
 
 
+class Relative(models.Model):
+    IDENTITY_DNI = 'DNI'
+    IDENTITY_PASSPORT = 'PASSPORT'
+    IDENTITY_RESIDENCE = 'RESIDENCE'
+
+    IDENTITY_CHOICES = (
+        (IDENTITY_DNI, _('DNI')),
+        (IDENTITY_PASSPORT, _('PASSPORT')),
+        (IDENTITY_RESIDENCE, _('RESIDENCE'))
+    )
+
+    GENDER_FEMALE = 'f'
+    GENDER_MALE = 'm'
+
+    GENDER_CHOICES = (
+        (GENDER_FEMALE, _('Female')),
+        (GENDER_MALE, _('Male'))
+    )
+
+    STATUS_ALONE = 'a'
+    STATUS_MARRIED = 'ma'
+    STATUS_DIVORCED = 'd'
+
+    STATUS_CHOICES = (
+        (STATUS_ALONE, _('Alone')),
+        (STATUS_MARRIED, _('Married')),
+        (STATUS_DIVORCED, _('Divorced'))
+    )
+
+    first_name = models.CharField(max_length=20, verbose_name=_('First name'))
+    last_name = models.CharField(max_length=20, verbose_name=_('Last name'))
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, verbose_name=_('Gender'))
+    identity = models.CharField(max_length=30, verbose_name=_('Identity'), unique=True)
+    type = models.CharField(max_length=10, choices=IDENTITY_CHOICES, verbose_name=_('Type'))
+    birthday = models.DateField(verbose_name=_('Birthday'))
+    civil_status = models.CharField(max_length=2, choices=STATUS_CHOICES, verbose_name=_('Civil status'))
+    address = models.CharField(max_length=50, verbose_name=_('Address'))
+    phone = PhoneNumberField(verbose_name=_('Phone'))
+    nationality = models.CharField(max_length=20, verbose_name=_('Nationality'), blank=True)
+
+    def __str__(self):
+        return '{} {}'.format(self.first_name, self.last_name)
+
+    class Meta:
+        verbose_name_plural = _('Relatives')
+        verbose_name = _('Relative')
+
+
 class Employee(models.Model):
     IDENTITY_DNI = 'DNI'
     IDENTITY_PASSPORT = 'PASSPORT'
@@ -113,3 +161,16 @@ class AcademicStudies(models.Model):
     class Meta:
         verbose_name_plural = _('Academic studies')
         verbose_name = _('Academic studie')
+
+
+class Academies(models.Model):
+    place = models.CharField(max_length=70, verbose_name=_('Place'))
+
+    def __str__(self):
+        return {''}.format(self.place)
+
+    class Meta:
+        verbose_name_plural = _('Academies')
+        verbose_name = _('Academy')
+
+
