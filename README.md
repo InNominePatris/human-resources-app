@@ -2,6 +2,7 @@
 
 **Tabla de Contenidos**
 - Instalación de Python
+- Creación de la base de datos en PostgreSQL
 - Instalación y configuración de entorno virtual (venv)
 - Instalación y configuracion del proyecto
 
@@ -18,6 +19,14 @@ Ya instalado Python procederemos a abrir nuestra terminal de comandos *cmd* medi
 `Tecla Windows + R`
 
 Luego escribimos `cmd` y ejecutamos.
+
+## Creación de la base de datos en PostgreSQL
+
+Suponiendo que ya tiene instalado PosrgreSQL nos dirigimos a PgAdmin y creamos una base de datos explícitamente con el nombre `base`.
+
+Instalación de PostgreSQL:
+
+> La instalación de PostgreSQL no está cubierta en esta documentación. Le recomendamos tener PostgreSQL 11.1 instalado en su ordenador ya que la base de datos de este proyecto se rige bajo la versión 11.1 del mismo.
 
 ## Instalación y configuración de entorno virtual (venv)
 
@@ -49,6 +58,11 @@ Luego salimos del directorio *scripts* y del entorno virtual *prueba* ya que lo 
 Procedemos a descargar el proyecto desde el repositorio de GitHub [Viesca 2000 Recursos Humanos](https://github.com/InNominePatris/Human-Resources) en la pestaña `clone or download` descargamos el proyecto como archivo `.zip` dando click en `Download zip` . Procedemos a descomprimir y tendremos una carpeta de nombre `Human-Resources`
 
 - Volvemos a la consola de comandos. Ya con nuestro entorno virtual activado `(prueba)` navegamos a la carpeta proyecto ya descargada `Human-Resources`. Nuestra dirección en la línea de comandos se verá de la siguiente manera: `(prueba) C:\Users\lenovo\Desktop\Human-Resources>`
+
+## Configuración del proyecto
+
+Ya con nuestro entorno virtual activado y dentro de la carpeta del proyecto que descargamos llamada `Human-Resources` procedemos a trabajar sobre las configuraciones del proyecto
+
 
 
 
