@@ -60,4 +60,6 @@ class Assistance(models.Model):
     def __str__(self):
         return '{}'.format(self.employee)
 
-
+    class Meta:
+        verbose_name_plural = _('Assitances')
+        verbose_name = _('Assistance')
