@@ -49,7 +49,11 @@ Luego de haber ejecutado el comando notaremos que el nombre de nuestro entorno e
 ```
 (prueba) C:\Users\lenovo\Desktop\prueba\Scripts>
 ```
-Luego salimos del directorio *scripts* y del entorno virtual *prueba* ya que lo hemos activado. Escribimos un par de veces  el comando `cd..` para salir de ambos directorios.
+Luego salimos del directorio *scripts* y del entorno virtual *prueba* ya que lo hemos activado. Escribimos un par de veces  el comando `cd..` para salir de ambos directorios y quedaremos hasta acá:
+
+```
+(prueba) C:\Users\lenovo\Desktop>
+```
 
 # Instalación y configuracion del proyecto
 
