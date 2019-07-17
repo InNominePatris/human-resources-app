@@ -2,7 +2,7 @@
 
 # Instrucciones de instalación
 
-##Instalar Python
+## Instalar Python
   
 *Django esta escrito en Python. Necesitamos Python para hacer cualquier cosa en Django. Comencemos instalandolo!. Este proyecto utiliza específicamente Python en su versión 3.7.0* *el link de descarga estará abajo.*
 
