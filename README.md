@@ -3,7 +3,7 @@
 **Tabla de Contenidos**
 - Instalación de Python
 - Instalación y configuración de entorno virtual (venv)
-- Instalación de proyecto y configuracion del proyecto
+- Instalación y configuracion del proyecto
 
 # Instrucciones de instalación
 
@@ -40,5 +40,13 @@ Luego de haber ejecutado el comando notaremos que el nombre de nuestro entorno e
 ```
 (prueba) C:\Users\lenovo\Desktop\prueba\Scripts>
 ```
-Luego salimos de el directorio *scripts* y del entorno virtual *prueba* ya que lo hemos activado mediante el comando `activate` escribiento un par de veces  el comando `cd..` .
+Luego salimos del directorio *scripts* y del entorno virtual *prueba* ya que lo hemos activado. Escribimos un par de veces  el comando `cd..` para salir de ambos directorios.
+
+# Instalación y configuracion del proyecto
+
+## Instalación
+
+Procedemos a descargar el proyecto desde el repositorio de GitHub: [Viesca 2000 Recursos Humanos](https://github.com/InNominePatris/Human-Resources)
+
+
 
