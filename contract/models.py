@@ -45,7 +45,16 @@ class Contract(models.Model):
         (UNDEFINED_CONTRACT, _('Undefined'))
     )
 
+    SERVICES_TYPE = 'Services'
+    PROFESSIONAL_TYPE = 'Professional'
+
+    CLAUSULE_TYPE = (
+        (SERVICES_TYPE, _('Services')),
+        (PROFESSIONAL_TYPE, _('Professional'))
+    )
+
     type = models.CharField(max_length=10, choices=CONTRACT_TYPE, verbose_name=_('Type'))
+    clausule = models.CharField(max_length=30, choices=CLAUSULE_TYPE, verbose_name=_('Clausule'))
     initial_date = models.DateField(null=False, verbose_name=_('Initial date'))
     final_date = models.DateField(null=True, verbose_name=_('Final date'))
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE, verbose_name=_('Employee'))
