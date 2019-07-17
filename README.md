@@ -81,7 +81,7 @@ python manage.py migrate
 ```
 Veremos como nuestras migraciones se comienzan a realizar sobre la base de datos `base` en PostgreSQL.
 
-Luego crearemos al primer usuario mediante el comando: `python manage.py createsuperuser` el cual después de ejecutado nos abrirá las opciones:
+Luego crearemos al primer usuario mediante el comando: `python manage.py createsuperuser` el cual después de ejecutado nos abrirá las opciones las cuales procederemos a completar:
 
 ```
 username:
@@ -90,6 +90,13 @@ password:
 
 Superuser created successfully
 ```
+Ya creado nuestro superusuario procederemos como último paso a levantar el servidor para que nuestra aplicación de recursos humanos corra con normalidad mediante el comando:
+
+```
+
+python manage.py runserver
+```
+**En el login ingresamos el nombre de usuario y contraseña anteriormente creados y  nuestro sistema _funcionará con nomalidad_ sin ningún problema**
 
 
 
