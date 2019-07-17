@@ -8,8 +8,14 @@
 
 Ve y descarga Python 3.7.0 [Python 3.7.0](https://www.python.org/downloads/release/python-370/) 
 
+**Table of Contents**
 
-
+[TOCM]
+# Instalacion de Python
+## Configuración de entorno virtual (Venv)
+### Instalación de Proyecto 
+#### Manipulación de contenido|
+[TOC]
 
 
 
