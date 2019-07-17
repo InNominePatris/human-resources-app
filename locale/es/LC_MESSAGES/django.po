@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 10:29-0600\n"
+"POT-Creation-Date: 2019-07-17 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,13 @@ msgstr "Beneficiarios"
 
 #: .\benefits\models.py:11 .\benefits\models.py:33 .\benefits\models.py:71
 #: .\charge\models.py:24 .\charge\models.py:48 .\controls\models.py:23
-#: .\management\models.py:11 .\management\models.py:65
+#: .\controls\models.py:97 .\management\models.py:11 .\management\models.py:65
 msgid "Active"
 msgstr "Activo"
 
 #: .\benefits\models.py:12 .\benefits\models.py:34 .\benefits\models.py:72
 #: .\charge\models.py:25 .\charge\models.py:49 .\controls\models.py:24
-#: .\management\models.py:12 .\management\models.py:66
+#: .\controls\models.py:98 .\management\models.py:12 .\management\models.py:66
 msgid "Inactive"
 msgstr "Inactivo"
 
@@ -53,7 +53,7 @@ msgstr "Detalle"
 
 #: .\benefits\models.py:18 .\benefits\models.py:43 .\benefits\models.py:92
 #: .\charge\models.py:30 .\charge\models.py:62 .\controls\models.py:35
-#: .\management\models.py:79
+#: .\controls\models.py:104 .\management\models.py:79
 msgid "Status"
 msgstr "Estado"
 
@@ -66,15 +66,18 @@ msgid "Solicitud de vacaciones"
 msgstr "Solicitud de vacaciones"
 
 #: .\benefits\models.py:41 .\charge\models.py:58 .\contract\models.py:58
+#: .\controls\models.py:102
 msgid "Initial date"
 msgstr "Fecha inicial"
 
 #: .\benefits\models.py:42 .\charge\models.py:59 .\contract\models.py:59
+#: .\controls\models.py:103
 msgid "Final date"
 msgstr "Fecha final"
 
 #: .\benefits\models.py:44 .\benefits\models.py:94 .\charge\models.py:9
-#: .\charge\models.py:29 .\employee\models.py:151
+#: .\charge\models.py:29 .\controls\models.py:59 .\controls\models.py:79
+#: .\employee\models.py:151
 msgid "Description"
 msgstr "Descripción"
 
@@ -218,7 +221,8 @@ msgid "Identity"
 msgstr "Identidad"
 
 #: .\contract\models.py:29 .\contract\models.py:56 .\controls\models.py:31
-#: .\employee\models.py:39 .\employee\models.py:86 .\management\models.py:43
+#: .\controls\models.py:80 .\employee\models.py:39 .\employee\models.py:86
+#: .\management\models.py:43
 msgid "Type"
 msgstr "Tipo"
 
@@ -294,7 +298,7 @@ msgstr "Desde"
 msgid "To date"
 msgstr "Hasta"
 
-#: .\controls\models.py:34
+#: .\controls\models.py:34 .\controls\models.py:105
 msgid "Reason"
 msgstr "Razón"
 
@@ -318,7 +322,7 @@ msgstr "Ausente"
 msgid "Half day"
 msgstr "Medio día"
 
-#: .\controls\models.py:56 .\employee\models.py:98
+#: .\controls\models.py:56 .\controls\models.py:101 .\employee\models.py:98
 msgid "Employees"
 msgstr "Empleados"
 
@@ -326,13 +330,51 @@ msgstr "Empleados"
 msgid "Mark"
 msgstr "Marcaje"
 
-#: .\controls\models.py:64
+#: .\controls\models.py:65
 msgid "Assitances"
 msgstr "Asistencias"
 
-#: .\controls\models.py:65
+#: .\controls\models.py:66
 msgid "Assistance"
 msgstr "Asistencia"
+
+#: .\controls\models.py:74
+msgid "Paid"
+msgstr ""
+
+#: .\controls\models.py:75
+#, fuzzy
+#| msgid "Assitances"
+msgid "Assigned"
+msgstr "Asistencias"
+
+#: .\controls\models.py:78
+#, fuzzy
+#| msgid "Identity"
+msgid "Cantidad"
+msgstr "Cantidad"
+
+#: .\controls\models.py:81
+msgid "Checked by"
+msgstr "Revisado por"
+
+#: .\controls\models.py:87
+msgid "Extras hours"
+msgstr "Horas extras"
+
+#: .\controls\models.py:88
+msgid "Extra hours"
+msgstr "Horas extra"
+
+#: .\controls\models.py:111
+#, fuzzy
+#| msgid "Solicitudes de vacaciones"
+msgid "Planes de horas extras"
+msgstr "Solicitudes de vacaciones"
+
+#: .\controls\models.py:112
+msgid "Plan de horas extras"
+msgstr "Plan de horas extras"
 
 #: .\employee\models.py:30 .\employee\models.py:78
 msgid "Alone"
@@ -587,4 +629,3 @@ msgstr "Personas"
 #: .\person\models.py:30
 msgid "Person"
 msgstr "persona"
-
