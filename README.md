@@ -74,7 +74,7 @@ Siguiendo dentro de nuestro directorio procedemos a instalar Django y todas las 
 pip install -r requirements.txt
 ```
 
-Y automáticamente nuestras librerías incluyendo Django se instalarán dentro de nuestro proyecto.
+Y automáticamente nuestras librerías de terceros e incluyendo Django se instalarán dentro de nuestro proyecto.
 
 Siguiendo en la misma ruta `(prueba) C:\Users\lenovo\Desktop\Human-Resources> ` procederemos a ejecutar las migraciones de nuestro proyecto mediante dos comandos en orden:
 
