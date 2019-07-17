@@ -23,5 +23,13 @@ Luego escribimos `cmd` y ejecutamos.
 
 Procedemos a crear un entorno virtual para instalar luego nuestro proyecto en Django. Ya dentro de nuestra consola de comandos `cmd` escribimos el comando:
 
- `python -m venv <nombre del entorno>`              //El nombre del entorno usted lo elige, no poner <> solo el nombre
+ `python -m venv <nombre del entorno>`              //El nombre del entorno usted lo elige, no poner <> solo el nombre\
+ 
+Ya creado el entorno procedemos a navegar dentro del mismo, como veremos habrá una carpeta llamada *scripts*. Navegamos dentro de la carpeta scripts y escribimos el comando `activate`. 
+
+Se mirará de esta manera: `(prueba) C:\Users\lenovo\Desktop\prueba\Scripts>activate` y ejecutamos.
+
+Veremos que el nombre de nuestro entorno se ha encerrado dentro de paréntesis como lo muestra el ejemplo:
+
+```(prueba) C:\Users\lenovo\Desktop\prueba\Scripts>```
 
