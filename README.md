@@ -112,7 +112,7 @@ Quit the server with CTRL-BREAK.
 ```
 **_Dando click sobre la dirección `http://127.0.0.1:8000/` y luego de la `/` agregándole la plabra `admin` nuestro sitio comenzará a funcionar mostrándonos de entrada el Login del sistema en pantalla. La dirección final a ingresar en el navegador luego de estar corriendo el servidor sería `http://127.0.0.1:8000/admin`._**
 
-**En el login ingresamos el nombre de usuario y contraseña anteriormente creados y  nuestro sistema _funcionará con nomalidad_ sin ningún problema**
+**En el login ingresamos el nombre de usuario y contraseña anteriormente creados y  nuestro sistema _funcionará con nomalidad_ sin ningún problema.**
 
 
 
