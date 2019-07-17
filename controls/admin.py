@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import AttendanceRequest, Assistance
+from .models import AttendanceRequest, Assistance, ExtraHours, ExtraHoursPlan
 
 
 class AttendanceAdmin(admin.ModelAdmin):
@@ -13,5 +13,12 @@ class AssistanceAdmin(admin.ModelAdmin):
     list_display = ('mark', 'date')
 
 
+class ExtraHoursPlanAdmin(admin.ModelAdmin):
+    filter_horizontal = ('employee',)
+
+
 admin.site.register(AttendanceRequest, AttendanceAdmin),
-admin.site.register(Assistance, AssistanceAdmin)
+admin.site.register(Assistance, AssistanceAdmin),
+admin.site.register(ExtraHours),
+admin.site.register(ExtraHoursPlan, ExtraHoursPlanAdmin)
+
