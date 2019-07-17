@@ -90,7 +90,7 @@ password:
 
 Superuser created successfully
 ```
-Ya creado nuestro superusuario procederemos como último paso a levantar el servidor para que nuestra aplicación de recursos humanos corra con normalidad mediante el comando:
+Ya creado nuestro superusuario procederemos como último paso a levantar el servidor para que nuestra aplicación de recursos humanos funcione con normalidad mediante el comando:
 
 ```
 
